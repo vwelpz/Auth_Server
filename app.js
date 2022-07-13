@@ -2,6 +2,7 @@
 
 const express = require('express');
 const database = require('./database');
+const { now } = require('./Managers/time');
 
 const app = express();
 
@@ -10,9 +11,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/now', (req,res) => {
-    return database.query(`SELECT NOW()`).then((response) => {
-        const now = response.rows[0].now;
-        return res.json({ now });
+    return now().then((time) => {
+        return res.json({ now:time});
     });
 });
 
