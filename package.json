@@ -4,7 +4,7 @@
   "description": "This is a backend of a Login System",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,9 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "jest": "^28.1.2",
+    "supertest": "^6.2.4"
   }
 }
