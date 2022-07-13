@@ -1,0 +1,22 @@
+{
+  "name": "auth_server-1",
+  "version": "1.0.0",
+  "description": "This is a backend of a Login System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vwelpz/Auth_Server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vwelpz/Auth_Server/issues"
+  },
+  "homepage": "https://github.com/vwelpz/Auth_Server#readme",
+  "dependencies": {
+    "pg": "^8.7.3"
+  }
+}
