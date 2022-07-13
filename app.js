@@ -1,6 +1,5 @@
 // to handle routing logic
 
-require('dotenv').config();
 const express = require('express');
 const database = require('./database');
 
@@ -17,7 +16,6 @@ app.get('/now', (req,res) => {
     });
 });
 
-const port = process.env.PORT;
-app.listen(port, () => {
-    console.log(`App is listening on port ${port}`);
-});
+module.exports = app;
+
+
